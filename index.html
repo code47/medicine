@@ -1,12 +1,29 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Hello, World!</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-      <h1 class="title">Hello World! </h1>
-      <p id="currentTime"></p>
-      <script src="script.js"></script>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finger Tip Game</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+<canvas id="gameCanvas"></canvas>
+<div id="basket"></div>
+<div id="scoreBoard">Score: <span id="score">0</span></div>
+<div id="messageBoard">Fingers Bent: <span id="fingerMessage">None</span></div>
+
+<audio id="indexFingerSound" src="index-finger-sound.mp3"></audio>
+<audio id="middleFingerSound" src="middle-finger-sound.mp3"></audio>
+<audio id="ringFingerSound" src="ring-finger-sound.mp3"></audio>
+<audio id="thumbSound" src="thumb-sound.mp3"></audio>
+<audio id="pinkyFingerSound" src="pinky-finger-sound.mp3"></audio>
+
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils"></script>
+<script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils"></script>
+<script src="script.js"></script> <!-- Link to the JavaScript file -->
+
+</body>
 </html>
+
